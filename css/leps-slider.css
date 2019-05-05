@@ -1,0 +1,175 @@
+/* line 1, ../sass/_reset.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strike, strong, sub, sup, tt, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, nav, output, ruby, section, time, mark, audio, video {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+html {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+}
+q, blockquote {
+	quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+	content: "";
+	content: none;
+}
+a img {
+	border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+*, :before, :after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+* html .clearfix {
+	zoom: 1;
+}
+*:first-child + html.clearfix {
+	zoom: 1;
+}
+.hidden {
+	display: none !important;
+}
+.lep-slider-wrapper {
+	overflow: hidden;
+	position: relative;
+}
+.lep-slider-wrapper .slides-container {
+	-moz-transition: inherit;
+	-o-transition: inherit;
+	-webkit-transition: inherit;
+	height: 100%;
+	position: relative;
+	transition: inherit;
+	width: auto;
+	z-index: 1;
+}
+.lep-slider-wrapper.leps-type-fade > .slides-container > .slide-item {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.lep-slider-wrapper.leps-type-fade > .slides-container > .slide-item {
+	-moz-transition: inherit;
+	-o-transition: inherit;
+	-webkit-transition: inherit;
+	float: left;
+	height: 100%;
+	opacity: 0;
+	transition: inherit;
+}
+.lep-slider-wrapper.leps-type-fade > .slides-container > .slide-item.leps-active-slide {
+	opacity: 1;
+	z-index: 9999;
+}
+.lep-slider-wrapper .leps-navigator {
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	bottom: 20px;
+	display: block;
+	height: 30px;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	z-index: 9999;
+}
+.lep-slider-wrapper .leps-navigator > li {
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	display: block;
+	float: left;
+	height: 20px;
+	margin: 5px;
+	width: 20px;
+}
+.lep-slider-wrapper .leps-navigator > li a {
+	cursor: pointer;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.lep-slider-wrapper .leps-navigator > li.active {
+	background-color: rgba(255, 255, 255, 0.2);
+	cursor: auto;
+}
+.lep-slider-wrapper .leps-directives {
+	color: rgba(255, 255, 255, 0.7);
+	font-family: sans-serif;
+}
+.lep-slider-wrapper .leps-directives li {
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	background: rgba(0, 0, 0, 0.1);
+	display: block;
+	height: 60px;
+	position: absolute;
+	width: 70px;
+	z-index: 9999;
+}
+.lep-slider-wrapper .leps-directives li a {
+	background-color: rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	display: block;
+	font-size: 12px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 60px;
+}
+.lep-slider-wrapper .leps-directives li.leps-next {
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	border-radius: 20px 0 0 20px;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.lep-slider-wrapper .leps-directives li.leps-next a {
+	border-radius: 10px 0 0 10px;
+	margin: 10px 0 0 10px;
+}
+.lep-slider-wrapper .leps-directives li.leps-prev {
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	border-radius: 0 20px 20px 0;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.lep-slider-wrapper .leps-directives li.leps-prev a {
+	border-radius: 0 10px 10px 0;
+	margin: 10px 10px 0 0;
+}
+.lep-slider-wrapper .leps-directives li.leps-inactive {
+	color: rgba(0, 0, 0, 0.2);
+	pointer-events: none;
+}

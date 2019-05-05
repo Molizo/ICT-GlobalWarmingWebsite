@@ -1,0 +1,308 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	margin: 0;
+	overflow-x: hidden;
+}
+html, body {
+	height: 100%;
+	width: 100%;
+}
+hr {
+	background-color: orange;
+	height: 5px;
+	margin: auto;
+	width: 10%;
+}
+
+.mapsoverlay {
+	position: relative;
+	width: 100%;
+	height: 450px;
+	top: 450px;
+	margin-top: -450px;
+	z-index: 1;
+}
+.ichb {
+	height: 100px;
+}
+.bg-grad {
+	background: -moz-linear-gradient(270deg, rgba(140, 49, 221, 1) 0%, rgba(25, 20, 216, 1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(25, 20, 216, 1)), color-stop(100%, rgba(140, 49, 221, 1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(270deg, rgba(140, 49, 221, 1) 0%, rgba(25, 20, 216, 1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(270deg, rgba(140, 49, 221, 1) 0%, rgba(25, 20, 216, 1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(270deg, rgba(140, 49, 221, 1) 0%, rgba(25, 20, 216, 1) 100%); /* ie10+ */
+	background: linear-gradient(270deg, rgba(140, 49, 221, 1) 0%, rgba(25, 20, 216, 1) 100%); /* w3c */
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F899FF', endColorstr='#0000ff', GradientType=1); /* ie6-9 */
+}
+i {
+	font-size: 35px;
+	margin-top: 10px;
+}
+bg-white {
+	background-color: white;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+.raleway {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+}
+.swiper-container {
+	height: 100%;
+	width: 100%;
+}
+.swiper-slide {
+	-ms-flex-align: center;
+	-ms-flex-pack: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	font-size: 18px;
+	justify-content: center;
+	text-align: center;
+}
+.slide1 {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/backgrounds/slide1.jpg");
+	background-size: cover;
+}
+.slide2 {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/backgrounds/slide2.jpg");
+	background-size: cover;
+}
+.slide3 {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/backgrounds/slide3.jpg");
+	background-size: cover;
+}
+.slide4 {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/backgrounds/slide4.jpg");
+	background-size: cover;
+}
+.slide5 {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/backgrounds/slide5R.jpg");
+	background-size: cover;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+h1 {
+	font-size: 3.75rem;
+}
+h2 {
+	font-size: 3.5rem;
+}
+h3 {
+	font-size: 1.875rem;
+}
+h4 {
+	font-size: 1.25rem;
+}
+h5 {
+	font-size: 1rem;
+}
+h6 {
+	font-size: 0.875rem;
+}
+.sidemenu {
+	background-color: #7ee8fa;
+	background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+	border-radius: 100%;
+	padding: 15px;
+	transition: background 1s linear;
+	transition-duration: .5s;
+}
+.sidemenu:hover {
+	background-color: #abe9cd;
+	background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+}
+.navbar-brand {
+	color: white;
+	font-size: 24px;
+}
+.logo {
+	height: 50px;
+}
+.unselectable {
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+.navbar-brand:hover, .navbar-brand:focus {
+	color: white;
+	font-size: 24px;
+}
+.nav-link {
+	color: white;
+}
+.sidenav {
+	background-color: #111;
+	height: 100%;
+	left: 0;
+	overflow-x: hidden;
+	padding-top: 60px;
+	position: fixed;
+	top: 0;
+	transition: 0.5s;
+	width: 0;
+	z-index: 1;
+}
+.sidenav a {
+	color: #ffffff;
+	display: block;
+	font-size: 25px;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+.sidenav .closebtn {
+	font-size: 36px;
+	margin-left: 50px;
+	position: absolute;
+	right: 25px;
+	top: 0;
+}
+.nav-link:hover {
+	font-weight: bold;
+}
+.bg-light .navbar-brand {
+	color: black;
+}
+.bg-light .nav-link {
+	color: black;
+}
+.bg-light .nav-link:hover {
+	font-weight: bold;
+}
+nav {
+	height: 0;
+	padding-bottom: 20px !important;
+	padding-top: 30px !important;
+	transition: .4s;
+}
+nav.bg-light {
+	-moz-box-shadow: 0px 8px 26px -2px rgba(0, 0, 0, 0.59);
+	-webkit-box-shadow: 0px 8px 26px -2px rgba(0, 0, 0, 0.59);
+	box-shadow: 0px 8px 26px -2px rgba(0, 0, 0, 0.59);
+	padding-bottom: 30px !important;
+	padding-top: 30px !important;
+	text: black;
+}
+
+@media screen and (max-width: 768px) {
+.container {
+	max-width: 98%;
+}
+}
+
+@media (max-width: 1200px) {
+html {
+	font-size: 15px;
+}
+}
+
+@media (max-width: 992px) {
+.ipr {
+	font-size: 13px;
+}
+html {
+	font-size: 14px;
+}
+h2 {
+	font-size: 3rem;
+}
+h3 {
+	font-size: 1.5rem;
+}
+h4 {
+	font-size: 1.125rem;
+}
+h5 {
+	font-size: .95rem;
+}
+p {
+	font-size: 14px;
+}
+.heading-title > span {
+	font-size: 1rem;
+}
+}
+
+@keyframes scroll {
+
+	0%, 20% {
+		transform: translateY(0) scaleY(1);
+	}
+
+	100% {
+		transform: translateY(36px) scaleY(2);
+		opacity: 0;
+	}
+
+}
+
+@media (max-width: 768px) {
+html {
+	font-size: 13px;
+}
+.ipr {
+	font-size: 13px;
+}
+}
+
+@media (max-width: 576px) {
+html {
+	font-size: 12px;
+}
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {
+	padding-top: 15px;
+}
+.sidenav a {
+	font-size: 18px;
+}
+}
+
+@media (min-width: 768px) {
+.slide5 {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/slide1R.jpg");
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/slide2R.jpg");
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/slide3R.jpg");
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/slide4R.jpg");
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/slide5.jpg");
+	background-size: cover;
+	background-size: cover;
+	background-size: cover;
+	background-size: cover;
+	background-size: cover;
+}
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {
+	padding-top: 15px;
+}
+.sidenav a {
+	font-size: 18px;
+}
+}
